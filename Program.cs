@@ -1,4 +1,5 @@
-﻿using ExampleApp.ScopeExamples;
+﻿using ExampleApp.ControllerExample;
+using ExampleApp.ScopeExamples;
 using System;
 
 namespace ExampleApp
@@ -18,6 +19,11 @@ namespace ExampleApp
             // 3. Instance:
             ScopeInstance instance = ScopeInstance.GetInstance();
             Console.WriteLine($"This is the bool from instance: {instance.boolTest}");
+            #endregion
+
+            #region Controller Example
+            Lettuce lettuce = new Lettuce();
+            Console.WriteLine($"This lettuce is red: {lettuce.isGreen}");
             #endregion
         }
     }
