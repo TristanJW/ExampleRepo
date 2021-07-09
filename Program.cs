@@ -23,7 +23,7 @@ namespace ExampleApp
 
             #region Controller Example
             Lettuce lettuce = new Lettuce();
-            Console.WriteLine($"This lettuce is red: {lettuce.isGreen}");
+            Console.WriteLine($"This lettuce is green: {lettuce.isGreen}");
             #endregion
         }
     }

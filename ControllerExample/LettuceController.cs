@@ -6,9 +6,9 @@ namespace ExampleApp.ControllerExample
 {
     class LettuceController
     {
-        public void makeLettuceRed(bool isGreen)
+        public void makeLettuceRed(Lettuce l)
         {
-
+            l.isGreen = false;
         }
     }
 }

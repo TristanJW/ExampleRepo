@@ -9,9 +9,12 @@ namespace ExampleApp.ControllerExample
         LettuceController lettuceController = new LettuceController();
         public bool isGreen = true;
 
+        /// <summary>
+        /// Constructor that will be calledw hen you initialize a lettuce class
+        /// </summary>
         public Lettuce()
         {
-            lettuceController.makeLettuceRed(isGreen);
+            lettuceController.makeLettuceRed(this);
         }
     }
 }
