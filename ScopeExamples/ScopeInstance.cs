@@ -13,8 +13,10 @@ namespace ExampleApp.ScopeExamples
         /// If an instance hasn't been made yet, make one.
         /// You can use this instance throughout the whole time the app is running.
         /// You can get the instance everywhere which makes it very flexible.
+        /// 
+        /// DISCLAIMER: this is an easy way out just like a static variable (this is a whole static class basically). 
+        /// Only use this for like settings or smth.
         /// </summary>
-        /// <returns></returns>
         public static ScopeInstance GetInstance()
         {
             if(_instance == null)
