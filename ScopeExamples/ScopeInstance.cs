@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ExampleApp.ScopeExamples
 {
-    class ScopeInstance
+    class ScopeInstance // This is the singleton design pattern
     {
         public bool boolTest = true;
         public static ScopeInstance _instance;
